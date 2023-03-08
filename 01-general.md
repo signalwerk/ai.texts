@@ -26,4 +26,4 @@ AI has become an integral part of our daily routine, enabling us to work more ef
 
 ---
 
-This blog post is based on an interview published on [persoenlich.ch](https://www.persoenlich.com/digital/ki-ist-bei-digitalagenturen-teil-des-teams) and translated and edited with the help of ChatGPT. In my role as a free software advocate at Liip, I'm aware of the ethical and licence implications we will face in the future with AI. This text is licensed as [creative commons (CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/).
+This blog post is based on an interview published on [persoenlich.ch](https://www.persoenlich.com/digital/ki-ist-bei-digitalagenturen-teil-des-teams) and translated and edited with the help of [ChatGPT](https://openai.com/blog/chatgpt) and [Janina Kürsteiner](https://www.liip.ch/de/team/janina-kuersteiner). As a free software advocate at Liip, I'm aware of the ethical and licence implications we will face in the future with AI. This text is licensed as [creative commons (CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/).

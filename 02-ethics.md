@@ -28,7 +28,7 @@ AI is a new and constantly developing technology that will play a major role in 
 
 ---
 
-This blog post was co-authored and edited with the help of ChatGPT and [Janina Kürsteiner](https://www.liip.ch/de/team/janina-kuersteiner). As a free software advocate at Liip, I'm aware of the ethical and licence implications this could have. Nevertheless, this text is licensed as [creative commons (CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/), it's uncertain whether copyright truly belongs to the losers<sup>12</sup>.
+This blog post was co-authored and edited with the help of [ChatGPT](https://openai.com/blog/chatgpt) and [Janina Kürsteiner](https://www.liip.ch/de/team/janina-kuersteiner). As a free software advocate at Liip, I'm aware of the ethical and licence implications this could have. Nevertheless, this text is licensed as [creative commons (CC BY-SA 2.0)](https://creativecommons.org/licenses/by-sa/2.0/), it's uncertain whether copyright truly belongs to the losers<sup>12</sup>.
 
 ---
 
