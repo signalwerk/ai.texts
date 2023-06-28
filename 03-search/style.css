@@ -1,0 +1,63 @@
+@import url('https://fonts.signalwerk.ch/css/latest/family=Open+Sans:ital,wght@0,300..800;1,300..800.css');
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #0054a2;
+}
+
+a:hover {
+  color: inherit;
+}
+
+::selection {
+  background: #006984;
+  text-shadow: none;
+}
+
+h1,
+h2,
+h3 {
+  color: #444;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1,
+h3 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.container,
+.header {
+  font-weight: 400;
+  width: 92%;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
