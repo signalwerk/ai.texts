@@ -1,27 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
   const source = `
-    <svg width="{{width}}" height="{{height}}" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 {{width}} {{height}}" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <marker id="arrowhead" markerWidth="{{markerWidth}}" markerHeight="{{markerHeight}}" refX="0" refY="{{markerHalfHeight}}" orient="auto">
                 <polygon fill="black" points="0 0, {{markerWidth}} {{markerHalfHeight}}, 0 {{markerHeight}}" />
             </marker>
             <marker id="arrowheadMagnitude" markerWidth="{{markerWidth}}" markerHeight="{{markerHeight}}" refX="0" refY="{{markerHalfHeight}}" orient="auto-start-reverse">
-                <polygon fill="#bf11bf" points="0 0, {{markerWidth}} {{markerHalfHeight}}, 0 {{markerHeight}}" />
+                <polygon fill="#c69c6d" points="0 0, {{markerWidth}} {{markerHalfHeight}}, 0 {{markerHeight}}" />
             </marker>
             <marker id="arrowheadDirection" markerWidth="{{markerWidth}}" markerHeight="{{markerHeight}}" refX="0" refY="{{markerHalfHeight}}" orient="auto-start-reverse">
-                <polygon fill="#398e53" points="0 0, {{markerWidth}} {{markerHalfHeight}}, 0 {{markerHeight}}" />
+                <polygon fill="#ed1e79" points="0 0, {{markerWidth}} {{markerHalfHeight}}, 0 {{markerHeight}}" />
             </marker>
         </defs>
-        <rect x="0" y="0" width="{{width}}" height="{{height}}" style="fill:lightgray;" />
+        <rect x="0" y="0" width="{{width}}" height="{{height}}" style="fill:transparent;" />
         <g transform="rotate({{angle}}, {{widthHalf}}, {{heightHalf}})">
             <text id="vectorLabel" x="{{magnitudeLabelX}}" y="{{directionLabelY}}" text-anchor="middle" fill="black" style="font-size:{{fontSizeVector}}">Vector</text>
             <line id="magnitudeLine" x1="{{magnitudeX}}" y1="{{magnitudeY}}" x2="{{magnitudeX2markerCompensation}}" y2="{{magnitudeY2}}" style="stroke:black;stroke-width:{{magnitudeStrokeWidth}}" marker-end="url(#arrowhead)" />
-            <line id="magnitudeLineStart" x1="{{magnitudeX}}" y1="{{magnitudeLineMarkY1}}" x2="{{magnitudeX}}" y2="{{magnitudeLineMarkY2}}" style="stroke:#bf11bf;stroke-width:1" />
-            <line id="magnitudeLineEnd" x1="{{magnitudeX2}}" y1="{{magnitudeLineMarkY1}}" x2="{{magnitudeX2}}" y2="{{magnitudeLineMarkY2}}" style="stroke:#bf11bf;stroke-width:1" />
-            <line id="directionLine" x1="{{directionX}}" y1="{{directionY}}" x2="{{directionX2}}" y2="{{directionY2}}" style="stroke:#398e53;stroke-width:{{directionStrokeWidth}}; stroke-dasharray:4;"  marker-end="url(#arrowheadDirection)" />
-            <text id="direction" x="{{directionX}}" y="{{directionLabelY}}" fill="#398e53" style="font-size:{{fontSize}}">Direction</text>
-            <line id="magnitudeLineDistance" x1="{{magnitudeX1smallMarkerCompensation}}" y1="{{magnitudeLineDistanceY}}" x2="{{magnitudeX2smallMarkerCompensation}}" y2="{{magnitudeLineDistanceY}}" style="stroke:#bf11bf;stroke-width:1;stroke-dasharray:4;fill:red" marker-end="url(#arrowheadMagnitude)" marker-start="url(#arrowheadMagnitude)" />
-            <text id="magnitudeLabel" x="{{magnitudeLabelX}}" y="{{magnitudeLabelY}}" fill="black" text-anchor="middle" style="font-size:{{fontSize}};fill:#bf11bf">Magnitude</text>
+            <line id="magnitudeLineStart" x1="{{magnitudeX}}" y1="{{magnitudeLineMarkY1}}" x2="{{magnitudeX}}" y2="{{magnitudeLineMarkY2}}" style="stroke:#c69c6d;stroke-width:1" />
+            <line id="magnitudeLineEnd" x1="{{magnitudeX2}}" y1="{{magnitudeLineMarkY1}}" x2="{{magnitudeX2}}" y2="{{magnitudeLineMarkY2}}" style="stroke:#c69c6d;stroke-width:1" />
+            <line id="directionLine" x1="{{directionX}}" y1="{{directionY}}" x2="{{directionX2}}" y2="{{directionY2}}" style="stroke:#ed1e79;stroke-width:{{directionStrokeWidth}}; stroke-dasharray:4;"  marker-end="url(#arrowheadDirection)" />
+            <text id="direction" x="{{directionX}}" y="{{directionLabelY}}" fill="#ed1e79" style="font-size:{{fontSize}}">Direction</text>
+            <line id="magnitudeLineDistance" x1="{{magnitudeX1smallMarkerCompensation}}" y1="{{magnitudeLineDistanceY}}" x2="{{magnitudeX2smallMarkerCompensation}}" y2="{{magnitudeLineDistanceY}}" style="stroke:#c69c6d;stroke-width:1;stroke-dasharray:4;fill:red" marker-end="url(#arrowheadMagnitude)" marker-start="url(#arrowheadMagnitude)" />
+            <text id="magnitudeLabel" x="{{magnitudeLabelX}}" y="{{magnitudeLabelY}}" fill="black" text-anchor="middle" style="font-size:{{fontSize}};fill:#c69c6d">Magnitude</text>
         </g>
     </svg>
     `;
@@ -106,5 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Inject SVG into the HTML
-  document.body.innerHTML += svg;
+  const resultDiv = document.getElementById("svg-vector");
+  resultDiv.innerHTML += svg;
+
+//   document.body.innerHTML += svg;
 });

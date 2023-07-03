@@ -9,11 +9,97 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div>
-      <div class="example">
-        <h2></h2>
-        <p></p>
+    <div class="container">
+      <div class="example capture" data-screenshot-name="all-data">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>AI-Vector ✨</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Train</code></td>
+              <td><code>811</code></td>
+            </tr>
+            <tr>
+              <td><code>Monkey</code></td>
+              <td><code>202</code></td>
+            </tr>
+            <tr>
+              <td><code>Bonobo</code></td>
+              <td><code>208</code></td>
+            </tr>
+            <tr>
+              <td><code>Chimpanzee</code></td>
+              <td><code>213</code></td>
+            </tr>
+            <tr>
+              <td><code>Watermelon</code></td>
+              <td><code>518</code></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <br />
+      <div class="example capture" data-screenshot-name="found-data">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>AI-Vector ✨</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Monkey</code></td>
+              <td><code>202</code></td>
+            </tr>
+            <tr>
+              <td><code>Bonobo</code></td>
+              <td><code>208</code></td>
+            </tr>
+            <tr>
+              <td><code>Chimpanzee</code></td>
+              <td><code>213</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="example capture" data-screenshot-name="wrong-data">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>AI-Vector ✨</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Train</code></td>
+              <td><code>811</code></td>
+            </tr>
+            <tr>
+              <td><code>Watermelon</code></td>
+              <td><code>518</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div class="example capture" data-screenshot-name="query-en">
+        <h3>Search Data: <code>Ape</code> → <code>200</code> (AI-Vector ✨)</h3>
+      </div>
+      <br />
+      <div class="example capture" data-screenshot-name="query-de">
+        <h3>
+          Search Data: <code>Affe</code> → <code>200</code> (AI-Vector ✨)
+        </h3>
+      </div>
+      <br />
+      <div id="svg-vector" class="example example--svg capture" data-screenshot-name="vector"></div>
     </div>
   </body>
 </html>
